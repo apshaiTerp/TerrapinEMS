@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|center_vertical|center_horizontal">
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="140dp" />
+
+        <EditText
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_gravity="center_horizontal"
+            android:hint="User Name"
+            android:textSize="30sp" />
+
+        <EditText
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:hint="Password"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginSpinner"
+            android:entries="@array/ambulances"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <Button
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:id="@+id/loginButton"
+            android:background="#1f4bea"
+            android:textSize="30dp"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal|top"
+        android:background="@drawable/ambulance2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ambulanceLayout"></LinearLayout>
+
+</RelativeLayout>

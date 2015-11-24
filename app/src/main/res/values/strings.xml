@@ -1,0 +1,181 @@
+<resources>
+    <string name="app_name">TerrapinEMS</string>
+
+    <string name="ok">OK</string>
+    <string name="login_dialog_title">Login Error</string>
+    <string name="username_login_error">No User Name Value Was Provided.\nPlease Provide a User Name to Log In.</string>
+    <string name="password_login_error">No Password Was Provided.\nPlease Provide a Password to Log In.</string>
+    <string name="ambulance_login_error">No Ambulance Was Selected.\nPlease Select an Ambulance to Log In.</string>
+
+    <string name="checking_label">Checking for assigned dispatches...</string>
+
+    <string name="patient_name_label">Patient Name:</string>
+    <string name="patient_address_label">Patient Address:</string>
+    <string name="patient_info_label">Patient Info:</string>
+    <string name="patient_severity_label">Reported Severity:</string>
+    <string name="patient_complaint_label">Primary Complaint:</string>
+    <string name="reported_by_label">Reported By:</string>
+    <string name="recommend_hospital_label">Recommended Hospital:</string>
+
+    <string name="accept_dispatch_button">          Accept Dispatch          </string>
+
+    <string name="age_range_select_label">Select Age Range:</string>
+    <string name="condition_select_label">Select Condition:</string>
+
+    <string name="child_button_text">Child</string>
+    <string name="teen_button_text">Teen</string>
+    <string name="adult_button_text">Adult</string>
+
+    <string name="noncrit_button_text">Non-Critical</string>
+    <string name="minor_button_text">Minor Trauma</string>
+    <string name="severe_button_text">Severe Trauma</string>
+    <string name="burn_button_text">Severe Burns</string>
+    <string name="stemi_button_text">STEMI</string>
+    <string name="stroke_button_text">Stroke</string>
+
+    <string name="gen_hospital_button_text">Generate Recommendations</string>
+    <string name="hospital_eta_label">Hospital ETA:</string>
+    <string name="hospital_distance_label">Distance to Hospital:</string>
+
+    <string name="incident_header_text">Select the Appropriate Task to Navigate to the Incident</string>
+    <string name="incident_button_text">Navigate To Incident</string>
+    <string name="onsite_button_text">Arrived on Site - Begin Triage</string>
+    <string name="cancel_button_text">Cancel Call - No Further Response Needed</string>
+
+    <string name="hospital_header_text">Transporting to Hospital Name</string>
+    <string name="hospital_button_text">Navigate To Hospital</string>
+    <string name="arrived_button_text">Arrived at Hospital - Call Complete</string>
+    <string name="triage_button_text">Change Triage Criteria</string>
+
+    <string-array name="ambulances">
+        <item>Choose Your Ambulance</item>
+        <item>Ambulance 50001</item>
+        <item>Ambulance 50002</item>
+        <item>Ambulance 50003</item>
+        <item>Ambulance 50004</item>
+        <item>Ambulance 50005</item>
+        <item>Ambulance 50006</item>
+        <item>Ambulance 50007</item>
+        <item>Ambulance 50008</item>
+        <item>Ambulance 50009</item>
+        <item>Ambulance 50010</item>
+        <item>Ambulance 50011</item>
+        <item>Ambulance 50012</item>
+        <item>Ambulance 50013</item>
+        <item>Ambulance 50014</item>
+        <item>Ambulance 50015</item>
+        <item>Ambulance 50016</item>
+        <item>Ambulance 50017</item>
+        <item>Ambulance 50018</item>
+        <item>Ambulance 50019</item>
+        <item>Ambulance 50020</item>
+        <item>Ambulance 50021</item>
+        <item>Ambulance 50022</item>
+        <item>Ambulance 50023</item>
+        <item>Ambulance 50024</item>
+        <item>Ambulance 50025</item>
+        <item>Ambulance 50026</item>
+        <item>Ambulance 50027</item>
+        <item>Ambulance 50028</item>
+        <item>Ambulance 50029</item>
+        <item>Ambulance 50030</item>
+        <item>Ambulance 50031</item>
+        <item>Ambulance 50032</item>
+        <item>Ambulance 50033</item>
+        <item>Ambulance 50034</item>
+        <item>Ambulance 50035</item>
+        <item>Ambulance 50036</item>
+        <item>Ambulance 50037</item>
+        <item>Ambulance 50038</item>
+        <item>Ambulance 50039</item>
+        <item>Ambulance 50040</item>
+        <item>Ambulance 50041</item>
+        <item>Ambulance 50042</item>
+        <item>Ambulance 50043</item>
+        <item>Ambulance 50044</item>
+        <item>Ambulance 50045</item>
+        <item>Ambulance 50046</item>
+        <item>Ambulance 50047</item>
+        <item>Ambulance 50048</item>
+        <item>Ambulance 50049</item>
+        <item>Ambulance 50050</item>
+        <item>Ambulance 50051</item>
+        <item>Ambulance 50052</item>
+        <item>Ambulance 50053</item>
+        <item>Ambulance 50054</item>
+        <item>Ambulance 50055</item>
+        <item>Ambulance 50056</item>
+        <item>Ambulance 50057</item>
+        <item>Ambulance 50058</item>
+        <item>Ambulance 50059</item>
+        <item>Ambulance 50060</item>
+        <item>Ambulance 50061</item>
+        <item>Ambulance 50062</item>
+        <item>Ambulance 50063</item>
+        <item>Ambulance 50064</item>
+        <item>Ambulance 50065</item>
+        <item>Ambulance 50066</item>
+        <item>Ambulance 50067</item>
+        <item>Ambulance 50068</item>
+        <item>Ambulance 50069</item>
+        <item>Ambulance 50070</item>
+        <item>Ambulance 50071</item>
+        <item>Ambulance 50072</item>
+        <item>Ambulance 50073</item>
+        <item>Ambulance 50074</item>
+        <item>Ambulance 50075</item>
+        <item>Ambulance 50076</item>
+        <item>Ambulance 50077</item>
+        <item>Ambulance 50078</item>
+        <item>Ambulance 50079</item>
+        <item>Ambulance 50080</item>
+        <item>Ambulance 50081</item>
+        <item>Ambulance 50082</item>
+        <item>Ambulance 50083</item>
+        <item>Ambulance 50084</item>
+        <item>Ambulance 50085</item>
+        <item>Ambulance 50086</item>
+        <item>Ambulance 50087</item>
+        <item>Ambulance 50088</item>
+        <item>Ambulance 50089</item>
+        <item>Ambulance 50090</item>
+        <item>Ambulance 50091</item>
+        <item>Ambulance 50092</item>
+        <item>Ambulance 50093</item>
+        <item>Ambulance 50094</item>
+        <item>Ambulance 50095</item>
+        <item>Ambulance 50096</item>
+        <item>Ambulance 50097</item>
+        <item>Ambulance 50098</item>
+        <item>Ambulance 50099</item>
+        <item>Ambulance 50100</item>
+        <item>Ambulance 50101</item>
+        <item>Ambulance 50102</item>
+        <item>Ambulance 50103</item>
+        <item>Ambulance 50104</item>
+        <item>Ambulance 50105</item>
+        <item>Ambulance 50106</item>
+        <item>Ambulance 50107</item>
+        <item>Ambulance 50108</item>
+        <item>Ambulance 50109</item>
+        <item>Ambulance 50110</item>
+        <item>Ambulance 50111</item>
+        <item>Ambulance 50112</item>
+        <item>Ambulance 50113</item>
+        <item>Ambulance 50114</item>
+        <item>Ambulance 50115</item>
+        <item>Ambulance 50116</item>
+        <item>Ambulance 50117</item>
+        <item>Ambulance 50118</item>
+        <item>Ambulance 50119</item>
+        <item>Ambulance 50120</item>
+        <item>Ambulance 50121</item>
+        <item>Ambulance 50122</item>
+        <item>Ambulance 50123</item>
+        <item>Ambulance 50124</item>
+        <item>Ambulance 50125</item>
+        <item>Ambulance 50126</item>
+    </string-array>
+    <string name="title_activity_accept_dispatch">AcceptDispatchActivity</string>
+    <string name="title_activity_map_to_indicent">IncidentMap</string>
+</resources>

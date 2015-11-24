@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="ac.ems.ambulance.terrapinems.activity.DiagnoseForHospitalActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please Provide Triage Criteria and Select Hospital"
+        android:id="@+id/headerText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignBottom="@+id/headerText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tableLayout1"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingEnd="0dp"
+            android:layout_marginRight="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/age_range_select_label"
+                android:id="@+id/textView10"
+                android:allowUndo="false"
+                android:textSize="30sp"
+                android:gravity="end"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/child_button_text"
+                android:id="@+id/childButton"
+                android:textSize="30sp"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/teen_button_text"
+                android:id="@+id/teenButton"
+                android:textSize="30sp"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adult_button_text"
+                android:id="@+id/adultButton"
+                android:textSize="30sp"
+                android:layout_margin="5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/condition_select_label"
+                android:id="@+id/textView11"
+                android:textSize="30sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="end" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/noncrit_button_text"
+                android:id="@+id/nonCritButton"
+                android:layout_margin="5dp"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minor_button_text"
+                android:id="@+id/minorButton"
+                android:layout_margin="5dp"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/severe_button_text"
+                android:id="@+id/severeButton"
+                android:layout_margin="5dp"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView12" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/burn_button_text"
+                android:id="@+id/burnButton"
+                android:layout_margin="5dp"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stemi_button_text"
+                android:id="@+id/stemiButton"
+                android:layout_margin="5dp"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stroke_button_text"
+                android:id="@+id/strokeButton"
+                android:layout_margin="5dp"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView13" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gen_hospital_button_text"
+                android:id="@+id/hospitalButton"
+                android:layout_column="1"
+                android:layout_span="2"
+                android:enabled="false"
+                android:textSize="30sp"
+                android:layout_margin="5dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_span="4"
+                android:background="@android:color/darker_gray"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/view2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select\nHospital"
+                android:id="@+id/hospButton1"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                android:background="#14d902"
+                android:height="94dp"
+                android:layout_margin="5dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_span="3"
+                android:layout_marginTop="10dp"
+                android:id="@+id/relativeHosp1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Here is the hospital name.... and some more"
+                    android:id="@+id/hospText1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="30sp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    android:ellipsize="none"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/hospital_eta_label"
+                    android:id="@+id/etaLabelText1"
+                    android:layout_below="@+id/hospText1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="24sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="10:21"
+                    android:id="@+id/hospETAText1"
+                    android:layout_below="@+id/hospText1"
+                    android:layout_toRightOf="@+id/etaLabelText1"
+                    android:layout_toEndOf="@+id/etaLabelText1"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="15dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/hospital_distance_label"
+                    android:id="@+id/distLabelText1"
+                    android:textSize="24sp"
+                    android:visibility="invisible"
+                    android:paddingLeft="55dp"
+                    android:layout_below="@+id/hospText1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="6.2 mi"
+                    android:id="@+id/distText1"
+                    android:layout_below="@+id/hospText1"
+                    android:layout_toRightOf="@+id/distLabelText1"
+                    android:layout_toEndOf="@+id/distLabelText1"
+                    android:layout_margin="5dp"
+                    android:textSize="24sp"
+                    android:paddingLeft="15dp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select\nHospital"
+                android:id="@+id/hospButton2"
+                android:layout_margin="5dp"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                android:background="#14d902"
+                android:height="94dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_span="3"
+                android:layout_marginTop="10dp"
+                android:id="@+id/relativeHosp2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Here is the hospital name.... and some more"
+                    android:id="@+id/hospText2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="30sp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    android:ellipsize="none"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/hospital_eta_label"
+                    android:id="@+id/etaLabelText2"
+                    android:layout_below="@+id/hospText2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="24sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="10:21"
+                    android:id="@+id/hospETAText2"
+                    android:layout_below="@+id/hospText2"
+                    android:layout_toRightOf="@+id/etaLabelText2"
+                    android:layout_toEndOf="@+id/etaLabelText2"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="15dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/hospital_distance_label"
+                    android:id="@+id/distLabelText2"
+                    android:textSize="24sp"
+                    android:visibility="invisible"
+                    android:paddingLeft="55dp"
+                    android:layout_below="@+id/hospText2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="6.2 mi"
+                    android:id="@+id/distText2"
+                    android:layout_below="@+id/hospText2"
+                    android:layout_toRightOf="@+id/distLabelText2"
+                    android:layout_toEndOf="@+id/distLabelText2"
+                    android:layout_margin="5dp"
+                    android:textSize="24sp"
+                    android:paddingLeft="15dp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select\nHospital"
+                android:id="@+id/hospButton3"
+                android:layout_margin="5dp"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                android:background="#14d902"
+                android:height="94dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_span="3"
+                android:layout_marginTop="10dp"
+                android:id="@+id/relativeHosp3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Here is the hospital name.... and some more"
+                    android:id="@+id/hospText3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="30sp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    android:ellipsize="none"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/hospital_eta_label"
+                    android:id="@+id/etaLabelText3"
+                    android:layout_below="@+id/hospText3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="24sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="10:21"
+                    android:id="@+id/hospETAText3"
+                    android:layout_below="@+id/hospText3"
+                    android:layout_toRightOf="@+id/etaLabelText3"
+                    android:layout_toEndOf="@+id/etaLabelText3"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="15dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/hospital_distance_label"
+                    android:id="@+id/distLabelText3"
+                    android:textSize="24sp"
+                    android:visibility="invisible"
+                    android:paddingLeft="55dp"
+                    android:layout_below="@+id/hospText3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="6.2 mi"
+                    android:id="@+id/distText3"
+                    android:layout_below="@+id/hospText3"
+                    android:layout_toRightOf="@+id/distLabelText3"
+                    android:layout_toEndOf="@+id/distLabelText3"
+                    android:layout_margin="5dp"
+                    android:textSize="24sp"
+                    android:paddingLeft="15dp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>
